@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    /* gradiente // hacia donde , color 1, color 2 */
+    background-image: linear-gradient(to right, red, orange);
+    height: 20vh;
+}
+
+.header ul li {
+    display: inline-block;
+}
+
+.header h1 {
+    transform: translate(150px 50px);
+}
+
+.main {
+    height: 70vh;
+    background-image: linear-gradient(rgba(167, 192, 78, 0.63), rgba(192, 117, 46, 0.603), rgba(189, 85, 85, 0.432));
+
+}
+
+.main img:hover {
+    /* transform: scale(1.10) translate(10px, 10px); */
+    transform: skew(5deg);
+    transition: 10s;
+}
+
+input {
+    width: 250px;
+    padding: 20px;
+}
+
+h2 {
+    color: aliceblue;
+    animation-name: tituloCambiante;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+/* keyframes */
+@keyframes tituloCambiante {
+    0% {
+        color: aqua;
+        font-size: 25px;
+    }
+
+    25% {
+        color: blue;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    50% {
+        color: brown;
+        text-decoration: underline;
+    }
+
+    75% {
+        color: burlywood;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+
+    100% {
+        color: yellow;
+        font-size: 18px;
+    }
+
+}
